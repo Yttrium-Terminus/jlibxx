@@ -12,4 +12,4 @@ Most stable with Java11
 # Setup
 Download this repository as a ZIP and unpack it, then `import` alongside anything else
 
-It is recommended to build everything before importing
+It is recommended to build everything before importing. This means compiling these files to `*.class` (I will incorporate a workflow to do this automatically)
