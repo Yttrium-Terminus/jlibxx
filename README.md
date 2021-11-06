@@ -20,3 +20,9 @@ For now just compile everything manually or build it, everything will become mor
 I plan to release this as a package for Gradle however this might be very unlikely, and could just be stagnant library downloaded straight from the lib.
 
 Plans to make a website to easily download stuffs related
+
+# Repository Workings
+Everytime something new is being worked on, the master branch would be forked and the feature would be added in this new branch, which would then be PRed back to the
+master branch.
+
+This means the master branch would be considered the "stable" branch
