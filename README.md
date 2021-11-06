@@ -10,7 +10,7 @@ Currently this library supports Java8 and above.
 Most stable with Java11
 
 # Setup
-Download this repository as a ZIP and unpack it, then `import` alongside anything else
+Download this repository as a ZIP and unpack it, then include this library alongside your files, NOTE DO NOT STRAIGHT UP PUT THIS LIBRARY INSIDE YOUR CODE
 
 It is recommended to build everything before importing. This means compiling these files to `*.class` (I will incorporate a workflow to do this automatically)
 
