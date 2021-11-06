@@ -14,6 +14,8 @@ Download this repository as a ZIP and unpack it, then include this library along
 
 It is recommended to build everything before importing. This means compiling these files to `*.class` (I will incorporate a workflow to do this automatically)
 
+For now just compile everything manually or build it, everything will become more user friendly as time goes on!
+
 # Plans
 I plan to release this as a package for Gradle however this might be very unlikely, and could just be stagnant library downloaded straight from the lib.
 
