@@ -4,6 +4,8 @@
  * 
  * This is constantly updated class with newer functionalities
  * 
+ * <b>Note this file should not be extended when any of @see java.math classes are used</b>
+ * 
  * @author Jack Meng
  * @link https://www.gnu.org/licenses/agpl-3.0.en.html
  * @since 1.0

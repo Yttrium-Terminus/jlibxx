@@ -159,4 +159,10 @@ public class Point {
   public double distance(double x2, double y2) {
     return Math.sqrt(Math.pow((x2 - x),2) + (y2 - y) * (y2 - y));
   }
+
+  /**
+   * This method performs a distance calculation between two points of type double
+   * 
+   * However the caveat is that if the user provides a @see java.awt.Point class instead of via double values
+   */
 }
