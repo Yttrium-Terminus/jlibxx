@@ -122,6 +122,8 @@ public class Point {
    * If give points are in a vertical line (where x = 0), this method will attemp to return undefined
    * However, a forced infinity check returns NaN if the given is a vertical line
    * 
+   * @code slope(4.3d, 5.0d);
+   * 
    * @param x2 The second X-value to be compared with
    * @param y2 The second Y-value to be compared with
    * @return The slope between the two points
@@ -133,6 +135,8 @@ public class Point {
   /**
    * This method performs a simple slope calculation between two points of type double
    * 
+   * @code slope(new Point(4, 3));
+   * 
    * @param point A point type that will be parsed
    * @return The slope between the two points
    */
@@ -140,5 +144,19 @@ public class Point {
     return (point.y - y) / (point.x - x);
   }
 
-  
+  /**
+   * This method performs a distance calculation between two points of type double 
+   * 
+   * This method uses the distance formula of:
+   * d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+   * 
+   * @code distance(3.7d, 9.8d);
+   * 
+   * @param x2
+   * @param y2
+   * @return
+   */
+  public double distance(double x2, double y2) {
+    return Math.sqrt(Math.pow((x2 - x),2) + (y2 - y) * (y2 - y));
+  }
 }
