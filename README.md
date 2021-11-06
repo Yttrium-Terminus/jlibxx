@@ -8,3 +8,8 @@ Feel free to send a pull request
 Currently this library supports Java8 and above.
 
 Most stable with Java11
+
+# Setup
+Download this repository as a ZIP and unpack it, then `import` alongside anything else
+
+It is recommended to build everything before importing
