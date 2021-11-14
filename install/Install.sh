@@ -1,3 +1,6 @@
+# Configs
+INSTALL_DIR="$HOME/JLibXX"
+
 #
 # Installs the current version of the JLibXX library.
 #
@@ -13,7 +16,36 @@
 # -v, --version			Display the current version of the JLibXX library.
 # -u, --uninstall		Uninstall the current version of the JLibXX library.
 
-INSTALL_DIR="$HOME/JLibXX"
+# Install function to git clone the JLibXX library to INSTALL_DIR
+
+
+if [ "$(uname -m)" = "x86_64" ]; then
+    ARCH="x64"
+elif [ "$(uname -m)" = "i686" ]; then
+    ARCH="x86"
+else
+    echo "Your architecture is not supported."
+    exit 1
+fi
+# check if the current user is root
+if [ "$(id -u)" != "0" ]; then
+    echo "You must be root to run this script."
+    exit 1
+fi
+# Check if the file is being run as root
+if [ "$(id -u)" = "0" ]; then
+    echo "You are running this script as root."
+    echo "This script will install the JLibXX library in $INSTALL_DIR."
+    echo "Do you want to continue? (y/n)"
+    read -r answer
+    if [ "$answer" != "y" ]; then
+        echo "Aborting."
+        exit 1
+    else 
+
+    fi
+fi
+
 if [ $# -eq 1 ]; then
 	if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
 		echo "Usage:"
