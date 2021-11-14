@@ -96,6 +96,14 @@ if [ $# -eq 1 ]; then
         else
             git clone https://github.com/exoad/jlibxx.git "$INSTALL_DIR"
 	else
+        if [ -d "$INSTALL_DIR" ]; then
+            echo "The JLibXX directory already exists."
+            exit 1
+        else
+            mkdir "$INSTALL_DIR"
+            echo "Successfully created JLibXX directory."
+            exit 0
+        fi
 		INSTALL_DIR="$1"
         git clone https://github.com/exoad/jlibxx.git "$INSTALL_DIR"
 	fi
