@@ -39,5 +39,10 @@ public class Mathxx {
     return value;
   }
 
-  
+  //generate a random number between two numbers
+  public double random(double min, double max) {
+    return min + (Math.random() * (max - min));
+  }
+
+
 }
