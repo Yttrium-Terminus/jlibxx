@@ -77,4 +77,18 @@ public class XMLParser {
     json = json.substring(0, json.length() - 1) + "}";
     return json;
   }
+
+  public static String xmlToHtml(String xml) {
+    String html = "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n</head>\n<body>\n";
+    String[] lines = xml.split("\n");
+    for (String line : lines) {
+      if (line.matches("<[^>]+>")) {
+        String tag = line.substring(1, line.indexOf('>'));
+        String content = line.substring(line.indexOf('>') + 1, line.lastIndexOf('<'));
+        html += "<" + tag + ">" + content + "</" + tag + ">\n";
+      }
+    }
+    html += "</body>\n</html>";
+    return html;
+  }
 }
