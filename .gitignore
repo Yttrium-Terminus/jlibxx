@@ -1,2 +1,5 @@
-*.class
 *.java~
+*.cpp_build
+*.yttrius
+*.out
+*.alex
