@@ -57,7 +57,7 @@ if [ $# -eq 1 ]; then
 		echo "Install.sh -v"
 		echo "Install.sh -u"
 		echo "Install.sh -d"
-        echo "Install.sh --sh"
+        echo "Install.sh --ssh"
 		exit 0
 	elif [ "$1" = "-v" ] || [ "$1" = "--version" ]; then
 		echo "JLibXX version 1.0.0"
