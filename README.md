@@ -2,6 +2,8 @@
 
 A work in progress where I add stuffs that I find to be useful and an interesting addition to the standard library.
 
+*Please Note: This library is not trying to alter anything this means you still must have the standard library, while this is just a small extension of it to allow more features :D*
+
 Feel free to send a pull request
 
 # Support
