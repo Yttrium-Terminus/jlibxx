@@ -106,5 +106,6 @@ if [ $# -eq 1 ]; then
         fi
 		INSTALL_DIR="$1"
         git clone https://github.com/exoad/jlibxx.git "$INSTALL_DIR"
+        exit 0
 	fi
 fi
