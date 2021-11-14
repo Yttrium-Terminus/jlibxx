@@ -16,7 +16,7 @@
  * @category Math
  */
 
-package jlibxx.math.coordinate_plane;
+package jlibxx.math.plane;
 
 public class Point {
   private double x;
