@@ -228,6 +228,10 @@ public class InReader {
     return is.readBoolean();
   }
 
+  public void close() {
+    is.close();
+  }
+
   public String toString() {
     return "InReader(" + s.toString() + ")";
   }
