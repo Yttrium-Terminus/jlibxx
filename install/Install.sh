@@ -27,7 +27,10 @@ else
     echo "Your architecture is not supported."
     exit 1
 fi
-# check if the current user is root
+if [ "$(uname -s)" = "MINGW32_NT-6.2" ]; then
+    echo "This script is not compatible with Windows."
+    exit 1
+fi
 if [ "$(id -u)" != "0" ]; then
     echo "You must be root to run this script."
     exit 1
