@@ -14,7 +14,7 @@ Most stable with Java11
 # Setup
 You should download this file for easier processing and installation of this library
 
-[Install.sh](./install/Install.sh) - *Nix or Bash avaliable systems with Root Permissions
+`THIS IS AN EXTREME WORK IN PROGRESS` [Install.sh](./install/Install.sh) - *Nix or Bash avaliable systems with Root Permissions
 
 Easier access will come for Win32 users
 
