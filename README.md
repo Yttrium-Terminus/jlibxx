@@ -12,11 +12,11 @@ Currently this library supports Java8 and above.
 Most stable with Java11
 
 # Setup
-Download this repository as a ZIP and unpack it, then include this library alongside your files, NOTE DO NOT STRAIGHT UP PUT THIS LIBRARY INSIDE YOUR CODE
+You should download this file for easier processing and installation of this library
 
-It is recommended to build everything before importing. This means compiling these files to `*.class` (I will incorporate a workflow to do this automatically)
+[Install.sh](./install/Install.sh) - *Nix or Bash avaliable systems with Root Permissions
 
-For now just compile everything manually or build it, everything will become more user friendly as time goes on!
+Easier access will come for Win32 users
 
 # Plans
 I plan to release this as a package for Gradle however this might be very unlikely, and could just be stagnant library downloaded straight from the lib.
