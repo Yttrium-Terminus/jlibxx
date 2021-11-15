@@ -48,6 +48,16 @@ public class Encode {
     this.s = plaintext;
   }
 
+  /**
+   * @param null This method uses the currently initialized instance of this Object @see java.lang.Object to see
+   * if the regex matches those of standard English Alphabets 
+   * @see jlibxx.human.en
+   * @return A boolean representing if the entered plaintext is english or not
+   * This object will technically extend the english class
+   * 
+   * Standard ASCII character coding
+   * @code {^[a-zA-Z0-9?><;,{}[\]\-_+=!@#$%\^&*|']*$}
+   */
   public boolean isEnglish() {
     return en.isEnglish(s.toString());
   }
