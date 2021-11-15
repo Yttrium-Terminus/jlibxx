@@ -27,7 +27,7 @@ package jlibxx.util;
 import jlibxx.human.en;
 
 public class Encode {
-  /*
+  /**
    * Plaintext must be in standard ASCII font style, else this program will then attempt to convert it to unicode
    * If the plaintext is given in ciphertext form, this class will further encrypt it "recursively"
    * @link https://www.ws-attacks.org/Recursive_Cryptography
