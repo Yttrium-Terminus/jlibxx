@@ -1,3 +1,4 @@
+/* user shall exclude this file completely */
 #include <signal.h>
 #include <unistd.h>
 
