@@ -18,6 +18,8 @@ You should download this file for easier processing and installation of this lib
 
 Easier access will come for Win32 users
 
+**NEVER RUN Make.sh WITHOUT DOING IT VIA Install.sh IT CAN PERMANENTLY LEAVE SOMETHINGS MISCONFIGURED**
+
 # Plans
 I plan to release this as a package for Gradle however this might be very unlikely, and could just be stagnant library downloaded straight from the lib.
 
