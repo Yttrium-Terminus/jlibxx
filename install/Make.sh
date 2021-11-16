@@ -10,3 +10,5 @@
 # This will atempt to run this script and generate the necessary components
 
 INSTALL_DIR="$HOME/JLibXX"
+
+mkdir "$INSTALL_DIR" ; echo -e "\e[32mCreated the Install Directory" ; echo -e "\e[0m" ; echo
