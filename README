@@ -13,11 +13,11 @@ Categories currently:
  - human/language
  - crypto
  - io
-=========================================
-|This is licensed under the license used|
-|by the original JDK but with some      |
-|alternations to fit with this extension|
-=========================================
+==========================================
+| THIS LIBRARY IS A SEPARATE ENTITY FROM | 
+| A JAVA JDK AND SHOULD NOT BE USED AS A |
+| SUBSTITUTE FOR ANY REGULAR JDKS        |
+==========================================
 
 SETUP (WIP):
 To install please find the installation
