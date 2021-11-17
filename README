@@ -1,37 +1,38 @@
-==== Java Library Extension (jlib++) ====
-
-NOTICE: 
-This is not a direct rewrite of the 
-standard Java Library and is instead an
-extension of the library providing 
-improvements and features that were not
-originally included in the normal JDK.
-
-Categories currently:
- - util
- - math
- - human/language
- - crypto
- - io
-==========================================
-| THIS LIBRARY IS A SEPARATE ENTITY FROM | 
-| A JAVA JDK AND SHOULD NOT BE USED AS A |
-| SUBSTITUTE FOR ANY REGULAR JDKS        |
-==========================================
-
-SETUP (WIP):
-To install please find the installation
-in ./install/Install.sh
-
-Only download this Install.sh file, 
-however you may also compile into bins
-by yourself
-
-It is suggested for the user to use:
--OpenJDK version 7+
--AdoptJDK version 11+
--EclipseJDK version 11+
-
-===========================================
-      Copyright (C) Jack Meng 2021
-===========================================
+                                                                   ==== Java Library Extension (jlib++) ====                                                                   
+                                                                                                                                                                               
+                                                                                    NOTICE:                                                                                    
+                                                                      This is not a direct rewrite of the                                                                      
+                                                                    standard Java Library and is instead an                                                                    
+                                                                      extension of the library providing                                                                       
+                                                                    improvements and features that were not                                                                    
+                                                                     originally included in the normal JDK.                                                                    
+                                                                                                                                                                               
+                                                                             Categories currently:                                                                             
+                                                                                     - util                                                                                    
+                                                                                     - math                                                                                    
+                                                                                - human/language                                                                               
+                                                                                    - crypto                                                                                   
+                                                                                      - io                                                                                     
+                                                                   ==========================================                                                                  
+                                                                  | THIS LIBRARY IS A SEPARATE ENTITY FROM |                                                                   
+                                                                   | A JAVA JDK AND SHOULD NOT BE USED AS A |                                                                  
+                                                                   | SUBSTITUTE FOR ANY REGULAR JDKS        |                                                                  
+                                                                   ==========================================                                                                  
+                                                                                                                                                                               
+                                                                                  SETUP (WIP):                                                                                 
+                                                                    To install please find the installation                                                                    
+                                                                            in ./install/Install.sh                                                                            
+                                                                                                                                                                               
+                                                                      Only download this Install.sh file,                                                                      
+                                                                     however you may also compile into bins                                                                    
+                                                                                  by yourself                                                                                  
+                                                                                                                                                                               
+                                                                      It is suggested for the user to use:                                                                     
+                                                                              -OpenJDK version 7+                                                                              
+                                                                             -AdoptJDK version 11+                                                                             
+                                                                            -EclipseJDK version 11+                                                                            
+                                                                                                                                                                               
+                                                                  ===========================================                                                                  
+                                                                             Copyright (C) Jack Meng 2021                                                                      
+                                                                  ===========================================                                                                  
+                                                                                                                                                                               
