@@ -1,5 +1,4 @@
 # Configs
-INSTALL_DIR="$HOME/JLibXX"
 
 #
 # Installs the current version of the JLibXX library.
@@ -107,5 +106,6 @@ if [ $# -eq 1 ]; then
 		INSTALL_DIR="$1"
         git clone https://github.com/exoad/jlibxx.git "$INSTALL_DIR"
         exit 0
+        fi
 	fi
 fi
