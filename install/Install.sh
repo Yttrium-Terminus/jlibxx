@@ -16,7 +16,7 @@
 # -u, --uninstall		Uninstall the current version of the JLibXX library.
 
 # Install function to git clone the JLibXX library to INSTALL_DIR
-
+INSTALL_DIR="$HOME/JLibXX"
 
 if [ "$(uname -m)" = "x86_64" ]; then
     ARCH="x64"
