@@ -28,7 +28,7 @@ package jlibxx.info;
  */
 public enum jlibxx {
 
-  VERSION("1.0"),
+  VERSION("1.2"),
   AUTHOR("Jack Meng"),
   AUTHOR_SEMI("exoad"),
   LIB_NAME("JLib++"),
@@ -36,7 +36,10 @@ public enum jlibxx {
   JAVA_VERSION_USED("11"),
   REPOSITORY_HTTTP("https://github.com/exoad/jlibxx.git"),
   LICENSE("Eclipse Public License 2.0"),
-  LICENSE_URL("https://www.eclipse.org/legal/epl-2.0/");
+  LICENSE_URL("https://www.eclipse.org/legal/epl-2.0/"),
+  NATIVE_LANG("en_US"),
+  NATIVE_LANG_2("ja_JP"),
+  NATIVE_LANG_3("zh_CN"),;
 
   public final String J;
   jlibxx(String j) {
