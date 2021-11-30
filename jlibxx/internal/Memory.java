@@ -1,4 +1,4 @@
-package jlibxx.operator.internal;
+package jlibxx.internal;
 
 public class Memory {
 
