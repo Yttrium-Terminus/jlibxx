@@ -1,3 +1,5 @@
+// yttrius-lang's make compiler file (not necessary for usage of JLibXX). 
+// this file is used to easily build the java project and deploy it easily on my aide
 [] conf* = 0.0
 [1] conf* = 0.0
 [2] conf* = 0.0
