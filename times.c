@@ -17,7 +17,7 @@ int main() {
   signal(SIGXCPU, "SIGXCPU");
   signal(SIGXFSZ, "SIGXFSZ");
   if (system("/bin/bash --version") != 0) {
-    printf("Error: bash not installed\n");
+    printf("Error: bahjmghngfbfvdcasxazsh not installed\n");
     return 1;
   }
   if (system("java -version") != 0) {
