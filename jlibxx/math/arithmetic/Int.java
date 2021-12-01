@@ -1,6 +1,6 @@
 package jlibxx.math.arithmetic;
 
-public class Int {
+public abstract class Int {
   // method to parse a string to an integer
   public static int parseInt(String s) {
     int i = 0;
