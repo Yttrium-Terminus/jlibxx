@@ -14,7 +14,7 @@
 
 package jlibxx.math;
 
-public class Mathxx {
+public abstract class Mathxx {
   Mathxx() {
 
   }
