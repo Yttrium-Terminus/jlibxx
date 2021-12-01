@@ -1,3 +1,4 @@
+// yttrius-lang compile file (not necessary for usage of JLibXX). 
 [] conf* = 0.0
 [1] conf* = 0.0
 [2] conf* = 0.0
