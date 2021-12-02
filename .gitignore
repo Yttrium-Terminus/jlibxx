@@ -1,6 +1,5 @@
 *.java~
 *.cpp_build
-*.yttrius
 *.out
 *.alex
 /.vscode
