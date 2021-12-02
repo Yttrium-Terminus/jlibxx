@@ -28,22 +28,27 @@ import jlibxx.human.en;
 
 public class Encode {
   /**
-   * Plaintext must be in standard ASCII font style, else this program will then attempt to convert it to unicode
-   * If the plaintext is given in ciphertext form, this class will further encrypt it "recursively"
+   * Plaintext must be in standard ASCII font style, else this program will then
+   * attempt to convert it to unicode
+   * If the plaintext is given in ciphertext form, this class will further encrypt
+   * it "recursively"
+   * 
    * @link https://www.ws-attacks.org/Recursive_Cryptography
    * @see jlibxx.util.Stringx
    */
   private String s;
-  
+
   /**
    * @param plaintext The plaintext that will be encrypted into the cipher
    * @see jlibxx.util.Decode
    * 
-   * <a>Avaliable Encoding Methods: 
-   * HEX, Base64, BaseX, UTF8, Standard-Unicode, Standard-ISO*, ASCII, JIS*, CNS*
+   *      <a>Avaliable Encoding Methods:
+   *      HEX, Base64, BaseX, UTF8, Standard-Unicode, Standard-ISO*, ASCII, JIS*,
+   *      CNS*
    * @see https://en.wikipedia.org/wiki/Character_encoding
-   * In courtesy of @link https://www.sciencedirect.com/topics/engineering/encoding-method
-   * </a>
+   *      In courtesy of @link
+   *      https://www.sciencedirect.com/topics/engineering/encoding-method
+   *      </a>
    */
   public Encode(String plaintext) {
     this.s = plaintext;
@@ -51,13 +56,14 @@ public class Encode {
 
   /**
    * @code {isEnglish() -> true ? false}
-   * @param null This method uses the currently initialized instance of this Object @see java.lang.Object to see
-   * if the regex matches those of standard English Alphabets 
+   *       @param null This method uses the currently initialized instance of this
+   *       Object @see java.lang.Object to see
+   *       if the regex matches those of standard English Alphabets
    * @see jlibxx.human.en
    * @return A boolean representing if the entered plaintext is english or not
-   * This object will technically extend the english class
+   *         This object will technically extend the english class
    * 
-   * Standard ASCII character coding
+   *         Standard ASCII character coding
    * @code {^[a-zA-Z0-9?><;,{}[\]\-_+=!@#$%\^&*|']*$}
    */
   public boolean isEnglish() {
@@ -66,14 +72,24 @@ public class Encode {
 
   /**
    * @code {toHex() -> hex_chars ? null}
-   * @param null This method uses the currently initialized instance of this Object @see java.lang.Object to encode
-   * the plaintext into HEX format
+   *       @param null This method uses the currently initialized instance of this
+   *       Object @see java.lang.Object to encode
+   *       the plaintext into HEX format
    * 
-   * <p>If the plaintext is already in standard HEX format, this method will not double check and will attempt to
-   * further encode such chars</p>
+   *       <p>
+   *       If the plaintext is already in standard HEX format, this method will
+   *       not double check and will attempt to
+   *       further encode such chars
+   *       </p>
    * 
-   * <p>This method does not print anything nor does it take into account if the given HEX_VALUES are valid (@link https://www.sciencedirect.com/topics/engineering/hexadecimal)
-   * the user must determine if the hex chars are valid if not this method will attempt to encode into an unknown format @link https://www.fileformat.info/info/unicode/char/0fffd/index.htm</p>
+   *       <p>
+   *       This method does not print anything nor does it take into account if
+   *       the given HEX_VALUES are valid (@link
+   *       https://www.sciencedirect.com/topics/engineering/hexadecimal)
+   *       the user must determine if the hex chars are valid if not this method
+   *       will attempt to encode into an unknown format @link
+   *       https://www.fileformat.info/info/unicode/char/0fffd/index.htm
+   *       </p>
    * 
    * @return The plaintext after having been encoded into HEX_CHARS
    */

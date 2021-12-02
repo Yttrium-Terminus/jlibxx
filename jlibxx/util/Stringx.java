@@ -17,62 +17,133 @@ public class Stringx {
     this.s = s;
   }
 
+  
+  /** 
+   * @return String
+   */
   public String getAddress() {
     return Integer.toHexString(s.hashCode());
   }
 
+  
+  /** 
+   * @return int
+   */
   public int getLength() {
     return s.length();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String getContent() {
     return s;
   }
 
+  
+  /** 
+   * @param offset
+   * @return String
+   */
   public String move(int offset) {
     return Integer.toHexString(s.hashCode() + offset);
   }
 
+  
+  /** 
+   * @param index
+   * @return char
+   */
   public char getChar(int index) {
     return s.charAt(index);
   }
 
+  
+  /** 
+   * @param s2
+   * @return String
+   */
   public String concat(String s2) {
     return s + s2;
   }
 
+  
+  /** 
+   * @param c
+   * @return String
+   */
   public String concat(char c) {
     return s + c;
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String concat(int n) {
     return s + n;
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String concat(long n) {
     return s + n;
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String concat(float n) {
     return s + n;
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String concat(double n) {
     return s + n;
   }
 
+  
+  /** 
+   * @param b
+   * @return String
+   */
   public String concat(boolean b) {
     return s + b;
   }
 
+  
+  /** 
+   * @param b
+   * @return String
+   */
   public String concat(byte b) {
     return s + b;
   }
 
+  
+  /** 
+   * @param sh
+   * @return String
+   */
   public String concat(short sh) {
     return s + sh;
   }
 
+  
+  /** 
+   * @return int[]
+   */
   public int[] toIntArray() {
     String[] sa = s.split(" ");
     int[] ia = new int[sa.length];
@@ -82,6 +153,10 @@ public class Stringx {
     return ia;
   }
 
+  
+  /** 
+   * @return long[]
+   */
   public long[] toLongArray() {
     String[] sa = s.split(" ");
     long[] ia = new long[sa.length];
@@ -91,6 +166,10 @@ public class Stringx {
     return ia;
   }
 
+  
+  /** 
+   * @return float[]
+   */
   public float[] toFloatArray() {
     String[] sa = s.split(" ");
     float[] ia = new float[sa.length];
@@ -100,6 +179,10 @@ public class Stringx {
     return ia;
   }
 
+  
+  /** 
+   * @return double[]
+   */
   public double[] toDoubleArray() {
     String[] sa = s.split(" ");
     double[] ia = new double[sa.length];
@@ -109,10 +192,18 @@ public class Stringx {
     return ia;
   }
 
+  
+  /** 
+   * @return char[]
+   */
   public char[] toCharArray() {
     return s.toCharArray();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String reverse() {
     StringBuilder sb = new StringBuilder();
     for (int i = s.length() - 1; i >= 0; i--) {
@@ -121,6 +212,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String shuffle() {
     char[] ca = s.toCharArray();
     for (int i = 0; i < ca.length; i++) {
@@ -132,6 +227,10 @@ public class Stringx {
     return new String(ca);
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toUpperCase() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -140,6 +239,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toLowerCase() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -148,6 +251,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toTitleCase() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -160,6 +267,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toCamelCase() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -172,6 +283,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toSnakeCase() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -189,6 +304,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String format() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -206,6 +325,11 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String appendNull(int n) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < n; i++) {
@@ -218,10 +342,19 @@ public class Stringx {
     s = null;
   }
 
+  
+  /** 
+   * @return int
+   */
   public int toInt() {
     return Integer.parseInt(s);
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String indent(int n) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < n; i++) {
@@ -230,6 +363,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String removeWhitespace() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -240,6 +377,11 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @param b
+   * @return String
+   */
   public String removeWhitespace(boolean b) {
     if (b) {
       return removeWhitespace();
@@ -248,6 +390,10 @@ public class Stringx {
     }
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean containsWhitespace() {
     for (int i = 0; i < s.length(); i++) {
       if (Character.isWhitespace(s.charAt(i))) {
@@ -257,6 +403,11 @@ public class Stringx {
     return false;
   }
 
+  
+  /** 
+   * @param c
+   * @return boolean
+   */
   public boolean contains(char c) {
     for (int i = 0; i < s.length(); i++) {
       if (s.charAt(i) == c) {
@@ -266,6 +417,11 @@ public class Stringx {
     return false;
   }
 
+  
+  /** 
+   * @param s
+   * @return boolean
+   */
   public boolean contains(String s) {
     for (int i = 0; i < s.length(); i++) {
       if (this.s.contains(s)) {
@@ -275,6 +431,11 @@ public class Stringx {
     return false;
   }
 
+  
+  /** 
+   * @param ca
+   * @return boolean
+   */
   public boolean contains(char[] ca) {
     for (int i = 0; i < ca.length; i++) {
       if (contains(ca[i])) {
@@ -284,6 +445,11 @@ public class Stringx {
     return false;
   }
 
+  
+  /** 
+   * @param sa
+   * @return boolean
+   */
   public boolean contains(String[] sa) {
     for (int i = 0; i < sa.length; i++) {
       if (contains(sa[i])) {
@@ -293,12 +459,20 @@ public class Stringx {
     return false;
   }
 
+  
+  /** 
+   * @param c
+   */
   public void each(Consumer<Character> c) {
     for (int i = 0; i < s.length(); i++) {
       c.accept(s.charAt(i));
     }
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toHex() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -307,10 +481,19 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toBase64() {
     return Base64.getEncoder().encodeToString(s.getBytes());
   }
 
+  
+  /** 
+   * @param base
+   * @return String
+   */
   public String toBaseChoice(int base) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -319,6 +502,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toUnicode() {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -327,6 +514,11 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @param n
+   * @return String
+   */
   public String toUnicode(int n) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -335,6 +527,12 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @param n
+   * @param m
+   * @return String
+   */
   public String toUnicode(int n, int m) {
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < s.length(); i++) {
@@ -346,6 +544,10 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean containsInvalidChars() {
     for (int i = 0; i < s.length(); i++) {
       if (s.charAt(i) == '\0') {
@@ -355,6 +557,12 @@ public class Stringx {
     return false;
   }
 
+  
+  /** 
+   * @param start
+   * @param end
+   * @return String
+   */
   public String substring(int start, int end) {
     char[] ca = s.toCharArray();
     StringBuilder sb = new StringBuilder();
@@ -364,14 +572,26 @@ public class Stringx {
     return sb.toString();
   }
 
+  
+  /** 
+   * @return int
+   */
   public int size() {
     return s.length();
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean isNull() {
     return s == null;
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean isEmpty() {
     for (int i = 0; i < s.length(); i++) {
       if (s.charAt(i) != ' ') {
@@ -381,7 +601,11 @@ public class Stringx {
     return true;
   }
 
-  //convert string to arraylist
+  
+  /** 
+   * @return List<String>
+   */
+  // convert string to arraylist
   public List<String> toArrayList() {
     ArrayList<String> al = new ArrayList<>();
     for (int i = 0; i < s.length(); i++) {
@@ -390,7 +614,11 @@ public class Stringx {
     return al;
   }
 
-  //convert string to hashset
+  
+  /** 
+   * @return Set<String>
+   */
+  // convert string to hashset
   public Set<String> toHashSet() {
     HashSet<String> hs = new HashSet<>();
     for (int i = 0; i < s.length(); i++) {
@@ -398,8 +626,12 @@ public class Stringx {
     }
     return hs;
   }
+
   
-  //convert string to linkedlist
+  /** 
+   * @return List<String>
+   */
+  // convert string to linkedlist
   public List<String> toLinkedList() {
     LinkedList<String> ll = new LinkedList<>();
     for (int i = 0; i < s.length(); i++) {
@@ -408,6 +640,10 @@ public class Stringx {
     return ll;
   }
 
+  
+  /** 
+   * @return Map<String, String>
+   */
   public Map<String, String> toMap() {
     Map<String, String> m = new HashMap<>();
     for (int i = 0; i < s.length(); i++) {
@@ -416,15 +652,27 @@ public class Stringx {
     return m;
   }
 
+  
+  /** 
+   * @return int
+   */
   public int length() {
     return new Stringx(s).size();
   }
 
-
+  
+  /** 
+   * @return String
+   */
   public String toString() {
     return s;
   }
 
+  
+  /** 
+   * @param i
+   * @return String
+   */
   public String charAt(int i) {
     StringBuilder sb = new StringBuilder();
     char[] ca = s.toCharArray();

@@ -11,20 +11,36 @@ public class Memory {
     this.block = new byte[BLOCK_SIZE];
   }
 
+  
+  /** 
+   * @return byte
+   */
   public byte getAddress() {
     return address;
   }
 
+  
+  /** 
+   * @return byte[]
+   */
   public byte[] getBlock() {
     return block;
   }
 
+  
+  /** 
+   * @param size
+   */
   public void extend(int size) {
     byte[] newBlock = new byte[size];
     System.arraycopy(block, 0, newBlock, 0, block.length);
     block = newBlock;
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toString() {
     StringBuffer sb = new StringBuffer();
     sb.append("Memory block at ").append(address).append("\n");
@@ -50,6 +66,10 @@ public class Memory {
     return sb.toString();
   }
 
+  
+  /** 
+   * @param b
+   */
   public void append(byte b) {
     if (block.length == 0) {
       block = new byte[1];
@@ -66,6 +86,10 @@ public class Memory {
     block = null;
   }
 
+  
+  /** 
+   * @return Memory
+   */
   public Memory copy() {
     Memory m = new Memory(address);
     m.block = new byte[block.length];
@@ -73,12 +97,21 @@ public class Memory {
     return m;
   }
 
+  
+  /** 
+   * @param index
+   * @param b
+   */
   public void set(int index, byte b) {
     if (index < block.length) {
       block[index] = b;
     }
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean isEmpty() {
     for (int i = 0; i < block.length; i++) {
       if (block[i] != 0) {
@@ -88,6 +121,11 @@ public class Memory {
     return true;
   }
 
+  
+  /** 
+   * @param filename
+   * @param block
+   */
   // dump a given memory block to a file
   public static void dump(String filename, byte[] block) {
     try(java.io.FileOutputStream fos = new java.io.FileOutputStream(filename);) {

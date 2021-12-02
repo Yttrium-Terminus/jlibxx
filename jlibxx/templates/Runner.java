@@ -7,22 +7,42 @@ public abstract class Runner {
     this.runner_class = runner_class;
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean uses_swing() {
     return runner_class.getName().contains("Swing");
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean uses_awt() {
     return runner_class.getName().contains("AWT");
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean uses_javafx() {
     return runner_class.getName().contains("JavaFX");
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean uses_javafx_swing() {
     return runner_class.getName().contains("JavaFXSwing");
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public boolean uses_javafx_awt() {
     return runner_class.getName().contains("JavaFXAWT");
   }

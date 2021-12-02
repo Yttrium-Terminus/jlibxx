@@ -2,6 +2,10 @@ package jlibxx.internal;
 
 public abstract class InternalCaller {
 
+  
+  /** 
+   * @return boolean
+   */
   public static boolean isGccCompilerAvailable() {
     try {
       Process p = Runtime.getRuntime().exec("gcc");
@@ -12,6 +16,10 @@ public abstract class InternalCaller {
     }
   }
 
+  
+  /** 
+   * @return boolean
+   */
   public static boolean isGppCompilerAvailable() {
     try {
       Process p = Runtime.getRuntime().exec("g++");

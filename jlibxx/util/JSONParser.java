@@ -31,6 +31,10 @@ public class JSONParser {
     this.json = new String(b);
   }
 
+  
+  /** 
+   * @param f
+   */
   public void write(File f) {
     try {
       java.nio.file.Files.write(f.toPath(), this.json.getBytes());
@@ -39,6 +43,10 @@ public class JSONParser {
     }
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toXML() {
     String[] lines = json.split("\n");
     String xml = "";
@@ -51,6 +59,10 @@ public class JSONParser {
     return xml;
   }
 
+  
+  /** 
+   * @return String
+   */
   public String toCSV() {
     String[] lines = this.json.split("\n");
     String csv = "";
@@ -63,6 +75,11 @@ public class JSONParser {
     return csv;
   }
 
+  
+  /** 
+   * @param element
+   * @return String
+   */
   public String parse(String element) {
     String[] lines = this.json.split("\n");
     String[] parts = element.split(":");
@@ -76,6 +93,12 @@ public class JSONParser {
     return value;
   }
 
+  
+  /** 
+   * @param element
+   * @param subElement
+   * @return String
+   */
   public String parse(String element, String subElement) {
     String[] lines = this.json.split("\n");
     for (String line : lines) {
@@ -90,6 +113,10 @@ public class JSONParser {
     return null;
   }
 
+  
+  /** 
+   * @return String[]
+   */
   public String[] toArray() {
     String[] lines = this.json.split("\n");
     String[] array = new String[lines.length];
@@ -98,6 +125,11 @@ public class JSONParser {
     return array;
   }
 
+  
+  /** 
+   * @param element
+   * @return String[]
+   */
   public String[] toArray(String element) {
     String[] lines = this.json.split("\n");
     String[] array = new String[lines.length];
@@ -109,6 +141,12 @@ public class JSONParser {
     return array;
   }
 
+  
+  /** 
+   * @param element
+   * @param subElement
+   * @return String[]
+   */
   public String[] toArray(String element, String subElement) {
     String[] lines = this.json.split("\n");
     String[] array = new String[lines.length];
@@ -124,6 +162,11 @@ public class JSONParser {
     return array;
   }
 
+  
+  /** 
+   * @param element
+   * @return boolean
+   */
   public boolean exists(String element) {
     String[] lines = this.json.split("\n");
     for (String line : lines)
@@ -132,6 +175,12 @@ public class JSONParser {
     return false;
   }
 
+  
+  /** 
+   * @param element
+   * @param subElement
+   * @return boolean
+   */
   public boolean exists(String element, String subElement) {
     String[] lines = this.json.split("\n");
     for (String line : lines) {

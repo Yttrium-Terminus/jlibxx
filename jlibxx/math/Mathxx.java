@@ -39,6 +39,12 @@ public abstract class Mathxx {
     return value;
   }
 
+  
+  /** 
+   * @param min
+   * @param max
+   * @return double
+   */
   //generate a random number between two numbers
   public double random(double min, double max) {
     return min + (Math.random() * (max - min));

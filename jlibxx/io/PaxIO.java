@@ -20,6 +20,12 @@ public class PaxIO {
   public PaxIO() {
 
   }
+  
+  /** 
+   * @param in
+   * @return int
+   * @throws IOException
+   */
   public static int readInt(InputStream in) throws IOException {
     int ch1 = in.read();
     int ch2 = in.read();
@@ -30,6 +36,12 @@ public class PaxIO {
     return ((ch1 << 24) + (ch2 << 16) + (ch3 << 8) + (ch4 << 0));
   }
 
+  
+  /** 
+   * @param in
+   * @return long
+   * @throws IOException
+   */
   public static long readLong(InputStream in) throws IOException {
     long ch1 = in.read();
     long ch2 = in.read();
@@ -44,6 +56,13 @@ public class PaxIO {
     return ((ch1 << 56) + (ch2 << 48) + (ch3 << 40) + (ch4 << 32) + (ch5 << 24) + (ch6 << 16) + (ch7 << 8) + (ch8 << 0));
   }
 
+  
+  /** 
+   * @param in
+   * @param buf
+   * @return int
+   * @throws IOException
+   */
   public static int readInt(InputStream in, int[] buf) throws IOException {
     int ch1 = in.read();
     int ch2 = in.read();
@@ -55,6 +74,15 @@ public class PaxIO {
     return 1;
   }
 
+  
+  /** 
+   * @param in
+   * @param buf
+   * @param off
+   * @param len
+   * @return int
+   * @throws IOException
+   */
   public static int readInt(InputStream in, int[] buf, int off, int len) throws IOException {
     if (len == 0)
       return 0;
@@ -68,6 +96,13 @@ public class PaxIO {
     return 1;
   }
 
+  
+  /** 
+   * @param in
+   * @param buf
+   * @return int
+   * @throws IOException
+   */
   public static int readChar(InputStream in, char[] buf) throws IOException {
     int ch1 = in.read();
     int ch2 = in.read();
@@ -77,6 +112,15 @@ public class PaxIO {
     return 1;
   }
 
+  
+  /** 
+   * @param in
+   * @param buf
+   * @param off
+   * @param len
+   * @return int
+   * @throws IOException
+   */
   public static int readChar(InputStream in, char[] buf, int off, int len) throws IOException {
     if (len == 0)
       return 0;
@@ -88,6 +132,13 @@ public class PaxIO {
     return 1;
   }
 
+  
+  /** 
+   * @param in
+   * @param buf
+   * @return int
+   * @throws IOException
+   */
   public static int readShort(InputStream in, short[] buf) throws IOException {
     int ch1 = in.read();
     int ch2 = in.read();

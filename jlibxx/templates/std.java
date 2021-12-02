@@ -1,3 +1,4 @@
+
 package jlibxx.templates;
 
 import java.io.BufferedInputStream;
@@ -36,8 +37,21 @@ import java.util.logging.MemoryHandler;
 
 import jlibxx.util.Pair;
 
+/**
+ * <h1>Standard Template Library</h1>
+ * <a>This file provides a simple bits implementation like from C++.</a>
+ * <a>However the user still must provide the implementations</
+ * 
+ * @author Jack Meng
+ * @version 1.1
+ * @since 1.2
+ * @see <a href="http://www.cplusplus.com/reference/clibrary/cstdio/">C++
+ *      Standard Library</a>
+ */
 public abstract class std {
-  private std() {}
+  private std() {
+  }
+
   static final String endl = "\n";
   static final byte INT_MAX = 127;
   static final byte INT_MIN = -128;
@@ -53,7 +67,7 @@ public abstract class std {
   static final double DOUBLE_MIN_VALUE = 4.9E-324;
   static final char CHAR_MAX = 65535;
   static final char CHAR_MIN = 0;
-  static final boolean TRUE = true; 
+  static final boolean TRUE = true;
   static final boolean FALSE = false;
   static final Object NULL = null;
   static final String EMPTY = "";
@@ -199,10 +213,18 @@ public abstract class std {
   static Deque<LinkedList<HashSet<Object>>> dqllhsobj;
   static Deque<HashMap<HashMap<Object, Object>, Object>> dqhmshsobjobj;
 
+  
+  /** 
+   * @param t
+   */
   static <T> void print(T t) {
     System.out.println(t);
   }
 
+  
+  /** 
+   * @param t
+   */
   static <T> void println(T t) {
     System.out.println(t);
   }
