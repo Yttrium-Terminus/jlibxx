@@ -1,0 +1,2 @@
+*.yttrius   diff=c
+*.yttrius_exon   diff=cmake
