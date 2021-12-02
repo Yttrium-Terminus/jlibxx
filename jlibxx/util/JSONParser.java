@@ -31,8 +31,7 @@ public class JSONParser {
     this.json = new String(b);
   }
 
-  
-  /** 
+  /**
    * @param f
    */
   public void write(File f) {
@@ -43,8 +42,7 @@ public class JSONParser {
     }
   }
 
-  
-  /** 
+  /**
    * @return String
    */
   public String toXML() {
@@ -59,8 +57,7 @@ public class JSONParser {
     return xml;
   }
 
-  
-  /** 
+  /**
    * @return String
    */
   public String toCSV() {
@@ -75,8 +72,7 @@ public class JSONParser {
     return csv;
   }
 
-  
-  /** 
+  /**
    * @param element
    * @return String
    */
@@ -93,8 +89,7 @@ public class JSONParser {
     return value;
   }
 
-  
-  /** 
+  /**
    * @param element
    * @param subElement
    * @return String
@@ -113,8 +108,7 @@ public class JSONParser {
     return null;
   }
 
-  
-  /** 
+  /**
    * @return String[]
    */
   public String[] toArray() {
@@ -125,8 +119,7 @@ public class JSONParser {
     return array;
   }
 
-  
-  /** 
+  /**
    * @param element
    * @return String[]
    */
@@ -141,8 +134,7 @@ public class JSONParser {
     return array;
   }
 
-  
-  /** 
+  /**
    * @param element
    * @param subElement
    * @return String[]
@@ -162,8 +154,7 @@ public class JSONParser {
     return array;
   }
 
-  
-  /** 
+  /**
    * @param element
    * @return boolean
    */
@@ -175,8 +166,7 @@ public class JSONParser {
     return false;
   }
 
-  
-  /** 
+  /**
    * @param element
    * @param subElement
    * @return boolean

@@ -20,38 +20,42 @@ public class Pair<T, E> {
     this.second = second;
   }
 
-  
-  /** 
-   * @return T
+  /**
+   * @return T Returns the first element of the pair.
    */
   public T getFirst() {
     return first;
   }
 
-  
-  /** 
-   * @return E
+  /**
+   * @return E Returns the second element of the pair.
    */
   public E getSecond() {
     return second;
   }
 
-  
-  /** 
-   * @param first
+  /**
+   * <a>This method attempts set the value of the first element to something different
+   * @param first The first element of the pair.
    */
   public void setFirst(T first) {
     this.first = first;
   }
 
-  
-  /** 
-   * @param second
+  /**
+   * <a>This method attempts to set the value of the second element to something different
+   * @param second The second element of the pair
    */
   public void setSecond(E second) {
     this.second = second;
   }
 
+  /**
+   * <a>This method attempts to swap the values
+   * <a>
+   * {@code First -> Second}
+   * {@code Second -> First}
+   */
   @SuppressWarnings("unchecked")
   public void swap() {
     T tmp = first;

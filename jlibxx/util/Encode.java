@@ -84,8 +84,8 @@ public class Encode {
    * 
    *       <p>
    *       This method does not print anything nor does it take into account if
-   *       the given HEX_VALUES are valid (@link
-   *       https://www.sciencedirect.com/topics/engineering/hexadecimal)
+   *       the given HEX_VALUES are valid
+   *       ({@link https://www.sciencedirect.com/topics/engineering/hexadecimal})
    *       the user must determine if the hex chars are valid if not this method
    *       will attempt to encode into an unknown format @link
    *       https://www.fileformat.info/info/unicode/char/0fffd/index.htm
