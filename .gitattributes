@@ -1,2 +1,2 @@
-*.yttrius   diff=c
-*.yttrius_exon   diff=cmake
+*.yttrius   linguist-language=R
+*.yttrius_exon   linguist-language=Bash
