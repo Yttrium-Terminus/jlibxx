@@ -33,7 +33,7 @@ public enum jlibxx {
   AUTHOR_SEMI("exoad"),
   LIB_NAME("JLib++"),
   JAVA_VERSION_MIN("1.8"),
-  JAVA_VERSION_USED("11"),
+  JAVA_VERSION_USED("16"),
   REPOSITORY_HTTTP("https://github.com/exoad/jlibxx.git"),
   LICENSE("Eclipse Public License 2.0"),
   LICENSE_URL("https://www.eclipse.org/legal/epl-2.0/"),
