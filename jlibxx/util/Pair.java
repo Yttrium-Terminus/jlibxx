@@ -20,6 +20,9 @@ public class Pair<T, E> {
     this.second = second;
   }
 
+  public Pair() {
+    // empty
+  }
   /**
    * @return T Returns the first element of the pair.
    */
