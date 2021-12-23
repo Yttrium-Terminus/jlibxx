@@ -4,7 +4,11 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * <p>
+   * Attempts to get the name of the 
+   * client's operating system
+   * </p>
+   * @return The Operating System's name
    */
   public String getOSName() {
     return System.getProperty("os.name");
@@ -12,7 +16,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The architecture of the client's computer
    */
   public String getOSArch() {
     return System.getProperty("os.arch");
@@ -20,7 +24,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The Version of the operating System
    */
   public String getOSVersion() {
     return System.getProperty("os.version");
@@ -28,7 +32,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The Username of the client/host
    */
   public String getUserName() {
     return System.getProperty("user.name");
@@ -36,7 +40,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The root user
    */
   public String getUserHome() {
     return System.getProperty("user.home");
@@ -44,7 +48,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return Get the main directory of the user (not root)
    */
   public String getUserDir() {
     return System.getProperty("user.dir");
@@ -52,7 +56,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The system's default file separator
    */
   public String getFileSeparator() {
     return System.getProperty("file.separator");
@@ -60,7 +64,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The system's default file separator
    */
   public String getPathSeparator() {
     return System.getProperty("path.separator");
@@ -68,7 +72,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The system's default line separator
    */
   public String getLineSeparator() {
     return System.getProperty("line.separator");
@@ -76,7 +80,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The System's Java Version
    */
   public String getJavaVersion() {
     return System.getProperty("java.version");
@@ -84,7 +88,7 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return The vendor of the Java (if Java is installed)
    */
   public String getJavaVendor() {
     return System.getProperty("java.vendor");
@@ -92,43 +96,21 @@ public abstract class SysFetcher {
 
   
   /** 
-   * @return String
+   * @return Direct link to the vendor
    */
   public String getJavaVendorURL() {
     return System.getProperty("java.vendor.url");
   }
 
-  
-  /** 
-   * @return String
-   */
-  public String getJavaHome() {
-    return System.getProperty("java.home");
-  }
 
   
   /** 
-   * @return String
+   * @return JVM version (if Java is installed)
    */
   public String getJavaVMVersion() {
     return System.getProperty("java.vm.version");
   }
 
-  
-  /** 
-   * @return String
-   */
-  public String getJavaVMVendor() {
-    return System.getProperty("java.vm.vendor");
-  }
-
-  
-  /** 
-   * @return String
-   */
-  public String getJavaVMName() {
-    return System.getProperty("java.vm.name");
-  }
 
   
   /** 
