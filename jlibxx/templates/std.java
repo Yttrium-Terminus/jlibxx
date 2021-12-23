@@ -40,7 +40,7 @@ import jlibxx.util.Pair;
 /**
  * <h1>Standard Template Library</h1>
  * <a>This file provides a simple bits implementation like from C++.</a>
- * <a>However the user still must provide the implementations</
+ * <a>However the user still must provide the implementations</a>
  * 
  * @author Jack Meng
  * @version 1.1
@@ -215,7 +215,7 @@ public abstract class std {
 
   
   /** 
-   * @param t
+   * @param t A revised version for the {@code System.out.print()} function
    */
   static <T> void print(T t) {
     System.out.println(t);
@@ -223,16 +223,19 @@ public abstract class std {
 
   
   /** 
-   * @param t
+   * @param t A revised version for the {@code System.out.println()} function
    */
   static <T> void println(T t) {
     System.out.println(t);
   }
-
+  
+  /**
+   * <p>Attempts to flush the buffer</p>
+   */
   static synchronized void flush() {
     System.out.flush();
   }
-
+  
   static synchronized void clearConsole() {
     System.out.print("\033[H\033[2J");
     flush();
