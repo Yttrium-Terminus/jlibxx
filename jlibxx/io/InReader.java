@@ -184,88 +184,77 @@ public class InReader {
     this.is = new InStream(r);
   }
 
-  
-  /** 
+  /**
    * @return int
    */
   public int read() {
     return is.read();
   }
 
-  
-  /** 
+  /**
    * @return int
    */
   public int next() {
     return is.read();
   }
 
-  
-  /** 
+  /**
    * @return int
    */
   public int nextInt() {
     return is.readInt();
   }
 
-  
-  /** 
+  /**
    * @return long
    */
   public long nextLong() {
     return is.readLong();
   }
 
-  
-  /** 
+  /**
    * @return float
    */
   public float nextFloat() {
     return is.readFloat();
   }
 
-  
-  /** 
+  /**
    * @return double
    */
   public double nextDouble() {
     return is.readDouble();
   }
 
-  
-  /** 
+  /**
    * @return String
    */
   public String nextLine() {
     return is.readLine();
   }
 
-  
-  /** 
+  /**
    * @return byte
    */
   public byte nextByte() {
     return is.readByte();
   }
 
-  
-  /** 
+  /**
    * @return short
    */
   public short nextShort() {
     return is.readShort();
   }
 
-  
-  /** 
+  /**
    * @return char
    */
   public char nextChar() {
     return is.readChar();
   }
 
-  
-  /** 
+  /**
    * @return boolean
    */
   public boolean nextBoolean() {
@@ -276,8 +265,7 @@ public class InReader {
     is.close();
   }
 
-  
-  /** 
+  /**
    * @return String
    */
   public String toString() {

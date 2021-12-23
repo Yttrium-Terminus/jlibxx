@@ -20,8 +20,8 @@ public class PaxIO {
   public PaxIO() {
 
   }
-  
-  /** 
+
+  /**
    * @param in
    * @return int
    * @throws IOException
@@ -36,8 +36,7 @@ public class PaxIO {
     return ((ch1 << 24) + (ch2 << 16) + (ch3 << 8) + (ch4 << 0));
   }
 
-  
-  /** 
+  /**
    * @param in
    * @return long
    * @throws IOException
@@ -53,11 +52,11 @@ public class PaxIO {
     long ch8 = in.read();
     if ((ch1 | ch2 | ch3 | ch4 | ch5 | ch6 | ch7 | ch8) < 0)
       throw new EOFException();
-    return ((ch1 << 56) + (ch2 << 48) + (ch3 << 40) + (ch4 << 32) + (ch5 << 24) + (ch6 << 16) + (ch7 << 8) + (ch8 << 0));
+    return ((ch1 << 56) + (ch2 << 48) + (ch3 << 40) + (ch4 << 32) + (ch5 << 24) + (ch6 << 16) + (ch7 << 8)
+        + (ch8 << 0));
   }
 
-  
-  /** 
+  /**
    * @param in
    * @param buf
    * @return int
@@ -74,8 +73,7 @@ public class PaxIO {
     return 1;
   }
 
-  
-  /** 
+  /**
    * @param in
    * @param buf
    * @param off
@@ -96,8 +94,7 @@ public class PaxIO {
     return 1;
   }
 
-  
-  /** 
+  /**
    * @param in
    * @param buf
    * @return int
@@ -112,8 +109,7 @@ public class PaxIO {
     return 1;
   }
 
-  
-  /** 
+  /**
    * @param in
    * @param buf
    * @param off
@@ -132,8 +128,7 @@ public class PaxIO {
     return 1;
   }
 
-  
-  /** 
+  /**
    * @param in
    * @param buf
    * @return int
@@ -148,6 +143,4 @@ public class PaxIO {
     return 1;
   }
 
-  
-  
 }

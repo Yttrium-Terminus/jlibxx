@@ -50,20 +50,36 @@ public class Complex {
     pair.setSecond(new BigInteger(imaginary));
   }
 
+  
+  /** 
+   * @return T
+   */
   @SuppressWarnings("unchecked")
   public <T> T getReal() {
     return (T) pair.getFirst();
   }
 
+  
+  /** 
+   * @return T
+   */
   @SuppressWarnings("unchecked")
   public <T> T getImaginary() {
     return (T) pair.getSecond();
   }
 
+  
+  /** 
+   * @return double
+   */
   public double abs() {
     return (pair.getFirst().multiply(pair.getFirst()).add(pair.getSecond().multiply(pair.getSecond()))).doubleValue();
   }
 
+  
+  /** 
+   * @return double
+   */
   public double arg() {
     return Helpers.atan2(pair.getFirst(), pair.getSecond());
   }

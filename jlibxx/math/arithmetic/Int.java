@@ -1,8 +1,8 @@
 package jlibxx.math.arithmetic;
 
 public abstract class Int {
-  
-  /** 
+
+  /**
    * @param s
    * @return int
    */
@@ -70,13 +70,13 @@ public abstract class Int {
   public static final int LOG2_SQRT_BITS = 5;
 
   Int(String s) {
-    if(s.length() != 32) {
+    if (s.length() != 32) {
       throw new NumberFormatException("String must be 32 characters long");
     }
-    if(parseInt(s) > MAX_VALUE) {
+    if (parseInt(s) > MAX_VALUE) {
       throw new NumberFormatException("String must be less than 2^32");
     }
-    if(parseInt(s) < MIN_VALUE) {
+    if (parseInt(s) < MIN_VALUE) {
       throw new NumberFormatException("String must be greater than -2^31");
     }
 
