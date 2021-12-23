@@ -3,10 +3,10 @@
  * @author Jack Meng
  * @since 1.0
  * 
- * <p>This enum is a standard library configuration file.
- * <p>It is used to get quick information on what version of JLibxx is being used
- * <p>This means everything here shall not be modified and is protected under
- * <p>a very strict licensing
+ * <p>This enum is a standard library configuration file.</p>
+ * <p>It is used to get quick information on what version of JLibxx is being used</p>
+ * <p>This means everything here shall not be modified and is protected under</p>
+ * <p>a very strict licensing</p>
  * 
  */
 
@@ -15,7 +15,7 @@ package jlibxx.info;
 /**
  * @author Jack Meng
  * @category info
- * <p> USAGE Example: {@code jlibxx.VERSION.get()}
+ * <p> USAGE Example: {@code jlibxx.VERSION.get()}</p>
  * 
  * <ul>
  *  <li>{@code VERSION} : the current version number</li>
@@ -45,6 +45,10 @@ public enum jlibxx {
   jlibxx(String j) {
     this.J = j;
   }
+  
+  /**
+    * @return A string representation of the value being held
+    */
   public Object get() {
     return this.J;
   }
