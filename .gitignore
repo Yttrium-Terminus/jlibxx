@@ -1,5 +1,4 @@
 *.java~
 *.cpp_build
-*.out
 *.alex
 /.vscode
