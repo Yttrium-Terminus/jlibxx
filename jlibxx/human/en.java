@@ -9,6 +9,7 @@
  * 
  * <p> 
  * Different variations of english and writing styles are not taking into considerations
+ * </p>
  */
 
 package jlibxx.human;
@@ -37,7 +38,7 @@ public enum en {
    * @param str This is the plaintext to be compared to in order to math it's regex with the standard English 
    * Regex
    *
-   * @link jlibxx.util.Encode
+   * @see jlibxx.util.Encode
    * @return true or false if it matches with the standard english regex
    */
   public static boolean isEnglish(String str) {
