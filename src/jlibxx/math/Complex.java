@@ -12,7 +12,7 @@ public class Complex {
       BigInteger c = a.add(b);
       BigInteger d = c.sqrt();
       BigInteger e = d.add(x);
-      if(y == BigInteger.ZERO) {
+      if (y == BigInteger.ZERO) {
         return 0;
       }
       BigInteger f = e.divide(y);
@@ -50,8 +50,7 @@ public class Complex {
     pair.setSecond(new BigInteger(imaginary));
   }
 
-  
-  /** 
+  /**
    * @return T
    */
   @SuppressWarnings("unchecked")
@@ -59,8 +58,7 @@ public class Complex {
     return (T) pair.getFirst();
   }
 
-  
-  /** 
+  /**
    * @return T
    */
   @SuppressWarnings("unchecked")
@@ -68,20 +66,41 @@ public class Complex {
     return (T) pair.getSecond();
   }
 
-  
-  /** 
-   * @return double
+  /**
+   * @return double The Magnitude of the complex number
    */
   public double abs() {
-    return (pair.getFirst().multiply(pair.getFirst()).add(pair.getSecond().multiply(pair.getSecond()))).doubleValue();
+    BigInteger a = pair.getFirst();
+    BigInteger b = pair.getSecond();
+    BigInteger c = a.multiply(a);
+    BigInteger d = b.multiply(b);
+    BigInteger e = c.add(d);
+    return e.sqrt().doubleValue();
   }
 
-  
-  /** 
+  public double exp(int n) {
+    return Math.pow(abs(), n);
+  }
+
+  /**
    * @return double
+   *         The Phase
+   *         Angle
+   *         {@link https://gubner.ece.wisc.edu/notes/MagnitudeAndPhaseOfComplexNumbers.pdf}
    */
   public double arg() {
-    return Helpers.atan2(pair.getFirst(), pair.getSecond());
+    BigInteger a = pair.getFirst();
+    BigInteger b = pair.getSecond();
+    if (a.compareTo(BigInteger.ZERO) == 0) {
+      if (b.compareTo(BigInteger.ZERO) == 0) {
+        return 0;
+      }
+      return Math.PI / 2;
+    }
+    if (b.compareTo(BigInteger.ZERO) == 0) {
+      return 0;
+    }
+    return Helpers.atan2(a, b);
   }
 
 }

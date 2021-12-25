@@ -40,7 +40,7 @@ public class Encode {
 
   /**
    * @param plaintext The plaintext that will be encrypted into the cipher
-   * @see jlibxx.util.Decode
+   * @see jlibxx.Decode
    * 
    *      <a>Avaliable Encoding Methods:
    *      HEX, Base64, BaseX, UTF8, Standard-Unicode, Standard-ISO*, ASCII, JIS*,
