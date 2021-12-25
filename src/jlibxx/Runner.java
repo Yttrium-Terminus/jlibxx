@@ -1,2 +1,7 @@
-package jlibxx;public class Runner {
+package jlibxx;
+
+public abstract class Runner {
+    public static void init() {
+        System.out.println("init jlibxx!");
+    }
 }
