@@ -1,0 +1,36 @@
+// yttrius-lang's make compiler file (not necessary for usage of JLibXX). 
+// this file is used to easily build the java project and deploy it easily on my aide
+[] conf* = 0.0
+[1] conf* = 0.0
+[2] conf* = 0.0
+[3] conf* = 0.0
+[4] conf* = 0.0
+[5] conf* = 0.0
+[6] conf* = 0.0
+[7] conf* = 0.0
+[8] conf* = 0.0
+[9] conf* = 0.0
+[10] conf* = 0.0
+[11] conf* = 0.0
+
+if(COMPILE_FLAG && !COMPILE_FLAG)
+  ymake -c -f Makefile
+elif 
+  ymake yttrius conf* = 0.0
+  for i in {1..12}
+    do
+      make yttrius new_conf* = 0.0
+  done
+elif 
+  ypp.get_conf_from_file(conf* = 0.0)
+  ypp.get_conf_from_file(new_conf* = 0.0) == 1.6 -> process.exit(0)
+
+else
+  ymake :
+    [] -> byte_0
+    [] -> byte_1
+    *.ypp.get_conf_from_file(conf* = 0.0)
+  ypp_compile flag = 0.0
+endif$
+
+exit : 0
