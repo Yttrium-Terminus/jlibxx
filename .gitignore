@@ -2,3 +2,5 @@
 *.cpp_build
 *.alex
 /.vscode
+/build
+/out
