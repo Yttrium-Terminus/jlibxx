@@ -1,7 +1,7 @@
-package test.math;
+package math;
 
 import jlibxx.math.Complex;
-import test.TesterTools;
+import TesterTools;
 
 public class ComplexTester extends TesterTools {
   public static void main(String[] args) {

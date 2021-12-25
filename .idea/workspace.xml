@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e5f0e42-a4ef-4ce0-a7bd-07605e63ac24" name="Default Changelist" comment="`add` build version">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JLibXX_pretest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/src.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jlibxx/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JlibXX_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/jlibxx/info/jlibxx.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/jlibxx/info/jlibxx.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jlibx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jlibx.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/math/ComplexTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/math/ComplexTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +38,16 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="jdk.selected.JAVA_MODULE" value="jbr-11" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.13908207" />
     <property name="project.structure.side.proportion" value="0.20983607" />
   </component>
@@ -92,6 +93,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="`fix` src file init" />
