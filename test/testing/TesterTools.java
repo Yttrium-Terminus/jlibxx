@@ -1,4 +1,4 @@
-
+package testing;
 
 public abstract class TesterTools {
   public static void toString(Object something) {
