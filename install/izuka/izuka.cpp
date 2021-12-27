@@ -21,6 +21,7 @@ int main() {
       cin >> option;
       if (isYes(option)) cout << "w" << endl;
       elif (isNo(option)) cout << error0 << endl;
+      elif (option == "exit" || option == "quit") return 0;
     }
   }
 }
