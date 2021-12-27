@@ -15,11 +15,7 @@ public enum ch {
 
     CHINESE_REGEX("[\\u4e00-\\u9fa5]");
 
-    private static String s;
-    private String parts;
-
     ch(String s) {
-        parts = s;
     }
 
     /**
@@ -31,8 +27,7 @@ public enum ch {
      *
      * @return A true or false representing if the String is Chinese or not
      */
-    public static boolean isChinese(String s) {
-        ch.s = s;
+    public boolean isChinese(String s) {
         return s.matches(CHINESE_REGEX.toString());
     }
 

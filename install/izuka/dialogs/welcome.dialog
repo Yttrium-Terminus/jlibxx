@@ -1,0 +1,17 @@
+
+== Welcome to the Installer for JLib++ ==
+
+  [ Copyright (C) Yttrium Terminus 2022 ]
+
+    This program will install JLib++
+    will install JLib++. Please make
+    sure you have the following:
+    - A working internet connection
+    - A working hard drive
+    - A working operating system
+    - Java 8 or higher
+    - A working Java Development Kit
+    - Ability to SSH or have proper
+      setup for Git profiling
+
+          Install (y/n)?

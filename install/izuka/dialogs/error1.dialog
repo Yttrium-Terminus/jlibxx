@@ -1,0 +1,9 @@
+**Error: while trying to install detected the following:
+  1. You are missing Java! (Find Java Here: http://www.java.com/en/download/index.jsp)
+  2. You are missing the JRE (Java Runtime Environment)
+  3. You are missing the JDK (Java Development Kit)
+
+> Please fix the above errors and try again. <
+
+Error Code: 1
+Exitting...

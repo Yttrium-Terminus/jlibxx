@@ -40,7 +40,7 @@ public class Encode {
 
   /**
    * @param plaintext The plaintext that will be encrypted into the cipher
-   * @see jlibxx.Decode
+   * @see jlibxx.util.Decode
    * 
    *      <a>Avaliable Encoding Methods:
    *      HEX, Base64, BaseX, UTF8, Standard-Unicode, Standard-ISO*, ASCII, JIS*,
@@ -96,5 +96,46 @@ public class Encode {
   public String toHex() {
     return new Stringx(s).toHex();
   }
+
+  public String toBase64() {
+    return new Stringx(s).toBase64();
+  }
+
+  public String caesarCipher(String s, int offset) {
+    StringBuilder sb = new StringBuilder();
+    for (char c : s.toCharArray()) {
+      if (Character.isUpperCase(c)) {
+        sb.append((char) ('A' + (c - 'A' + offset) % 26));
+      } else if (Character.isLowerCase(c)) {
+        sb.append((char) ('a' + (c - 'a' + offset) % 26));
+      } else {
+        sb.append(c);
+      }
+    }
+
+    return sb.toString();
+  }
+
+  public String toBaseX(int base) {
+    return new String(new char[s.length()]).replace("\0", Integer.toString(Integer.parseInt(s, base), base));
+  }
+
+  public String XOR(String s) {
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < this.s.length(); i++) {
+      sb.append((char) (this.s.charAt(i) ^ s.charAt(i)));
+    }
+    return sb.toString();
+  }
+
+  public String XOR(String s, int shift) {
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < this.s.length(); i++) {
+      sb.append((char) (this.s.charAt(i) ^ s.charAt(i) ^ shift));
+    }
+    return sb.toString();
+  }
+
+  
 
 }

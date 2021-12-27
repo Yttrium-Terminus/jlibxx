@@ -20,6 +20,7 @@ package jlibxx;
  * 
  *         <ul>
  *         <li>{@code VERSION} : the current version number</li>
+ *         <li>{@code PATCH_VERSION} : the patch version</li>
  *         <li>{@code AUTHOR} : maintainer and curator</li>
  *         <li>{@code AUTHOR_SEMI} : maintainer's username</li>
  *         <li>{@code LIB_NAME} : This library's nameset</li>
@@ -39,6 +40,7 @@ public abstract class jlibxx {
   }
 
   public static final String VERSION = "1.1";
+  public static final String PATCH_VERSION = "1.0.2";
   public static final String AUTHOR = "Jack Meng";
   public static final String AUTHOR_SEMI = "jmeng";
   public static final String LIB_NAME = "jlibxx";

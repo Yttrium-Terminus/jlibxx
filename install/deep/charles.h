@@ -1,7 +1,3 @@
-/**
- * Creates a stackdump
- * Note: this is not for client side reproduction and usage and will excluded during deep install
- */
 
 #include <stdlib.h>
 #include <iostream>

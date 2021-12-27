@@ -29,6 +29,7 @@ public class Referencer<T> {
   /** 
    * @param n
    */
+  @SuppressWarnings("unchecked")
   public void align(int n) {
     ref = (T) ((Object) (((int) ref) & ~(n - 1)));
   }

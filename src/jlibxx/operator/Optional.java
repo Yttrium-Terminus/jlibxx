@@ -11,57 +11,43 @@ public class Optional<T> {
     this.value = value;
   }
 
-  
-  /** 
+  /**
    * @return T
    */
   public T get() {
     return value;
   }
 
-  
-  /** 
+  /**
    * @return boolean
    */
   public boolean isPresent() {
     return value != null;
   }
 
-  
-  /** 
+  /**
    * @param value
    * @return Optional<T>
    */
   public static <T> Optional<T> of(T value) {
-    return new Optional<T>(value);
+    return new Optional<>(value);
   }
 
-  
-  /** 
+  /**
    * @return Optional<T>
    */
   public static <T> Optional<T> empty() {
-    return new Optional<T>(null);
+    return new Optional<>(null);
   }
 
-  
-  /** 
+  /**
    * @return boolean
    */
   public boolean isEmpty() {
     return value == null;
   }
 
-  
-  /** 
-   * @return T
-   */
-  public T getValue() {
-    return value;
-  }
-
-  
-  /** 
+  /**
    * @param defaultValue
    * @return T
    */
@@ -69,8 +55,7 @@ public class Optional<T> {
     return value != null ? value : defaultValue;
   }
 
-  
-  /** 
+  /**
    * @param t
    * @return T
    * @throws Throwable
@@ -82,8 +67,7 @@ public class Optional<T> {
     return value;
   }
 
-  
-  /** 
+  /**
    * @param t
    * @param message
    * @return T
@@ -96,8 +80,7 @@ public class Optional<T> {
     return value;
   }
 
-  
-  /** 
+  /**
    * @param t
    * @param message
    * @param args
@@ -111,8 +94,7 @@ public class Optional<T> {
     return value;
   }
 
-  
-  /** 
+  /**
    * @param value
    * @return T
    */
@@ -120,8 +102,7 @@ public class Optional<T> {
     return value != null ? value : this.value;
   }
 
-  
-  /** 
+  /**
    * @param supplier
    * @return T
    */
@@ -129,8 +110,7 @@ public class Optional<T> {
     return value != null ? value : supplier.get();
   }
 
-  
-  /** 
+  /**
    * @param o
    * @return boolean
    */
@@ -146,8 +126,7 @@ public class Optional<T> {
     return Objects.equals(value, other.value);
   }
 
-  
-  /** 
+  /**
    * @param mapper
    * @return Optional<U>
    */
@@ -155,8 +134,7 @@ public class Optional<T> {
     return value != null ? Optional.of(mapper.apply(value)) : Optional.empty();
   }
 
-  
-  /** 
+  /**
    * @param predicate
    * @return Optional<T>
    */
@@ -164,8 +142,7 @@ public class Optional<T> {
     return value != null && predicate.apply(value) ? this : Optional.empty();
   }
 
-  
-  /** 
+  /**
    * @param other
    */
   public void swap(Optional<T> other) {
@@ -178,8 +155,7 @@ public class Optional<T> {
     value = null;
   }
 
-  
-  /** 
+  /**
    * @param value
    */
   public void emplace(T value) {
