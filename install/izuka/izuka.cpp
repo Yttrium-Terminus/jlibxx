@@ -1,10 +1,10 @@
-#include "izuka_base.hpp"
+#include "base.hpp"
 
 using namespace std;
-
+using namespace base;
 int main() {
   speed;
-  if (!load) {
+  if (!load()) {
     cout << "**Invalid Resources!\nPlease make sure you have everything "
             "installed properly...\nError Code: 4\n\nExitting..."
          << endl;

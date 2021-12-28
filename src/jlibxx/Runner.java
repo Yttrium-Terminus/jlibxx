@@ -17,10 +17,10 @@ package jlibxx;
  */
 
 import jlibxx.runtime.definition.deepdef.OccurError;
-import jlibxx.runtime.math.AlgoError;
 
 public abstract class Runner {
     private Runner() {
+        // override default constructor
     }
 
     /**
@@ -47,10 +47,6 @@ public abstract class Runner {
         System.out.println("JLibXX Native Language 2: " + jlibxx.NATIVE_LANG_2);
         System.out.println("JLibXX Native Language 3: " + jlibxx.NATIVE_LANG_3);
         System.out.println("JLibXX Initialization Complete!");
-    }
-
-    public static void testComplex() throws AlgoError {
-        
     }
 
 }

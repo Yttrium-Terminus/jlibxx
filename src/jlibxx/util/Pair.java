@@ -21,7 +21,7 @@ public class Pair<T, E> {
   }
 
   public Pair() {
-    // empty
+    // overriden unused constructor
   }
   /**
    * @return T Returns the first element of the pair.
