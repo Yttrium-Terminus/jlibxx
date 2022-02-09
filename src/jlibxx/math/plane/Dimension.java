@@ -40,12 +40,12 @@ public class Dimension<T> {
     return new java.awt.Dimension((int) width, (int) height);
   }
 
-  public T getWidth() {
-    return width;
+  public float getWidth() {
+    return (float) width;
   }
 
-  public T getHeight() {
-    return height;
+  public float getHeight() {
+    return (float) height;
   }
 
   public String toString() {
